@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    background: url("../images/background.png");
+    margin:0;
+    padding:0;
+}
+
+h1, h2 {
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 18px;
+    background: rgba(30, 30, 30, 0.6);
+    color: white;
+    padding:5px 10px 5px 10px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+a, a:link, a:visited {
+    color: #000;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+
+a:hover, a:active {
+    color: #FFF;
+}
+
+/* Default setting */
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+iframe#map {
+    margin: 10px 0px 10px 0px;
+}
+
+.data {
+    margin: 10px;
+    padding:5px 10px 5px 10px;
+
+    -webkit-transition: background 0.3s ease-in, color 0.3s ease-in;
+    -moz-transition: background 0.3s ease-in, color 0.3s ease-in;
+    -ms-transition: background 0.3s ease-in, color 0.3s ease-in;
+    -o-transition: background 0.3s ease-in, color 0.3s ease-in;
+    transition: background 0.3s ease-in, color 0.3s ease-in;
+}
+
+.data:hover {
+    background: rgba(130, 130, 130, 0.55);
+    color: white;
+}
+
+.data:hover a {
+    color: white;
+}
+
+.subtitle + ul, .subtitle + input[type=button], .subtitle + span {
+    display: none;
+}
+
+#media video, #media canvas, #media img {
+    width: 100%;
+}
+
+#cssHistory ul a:visited {
+    display: block;
+    color: #ff0000;
+}
+
+#cssHistory ul a {
+    color: #00ff00;
+}
+
+#media img, #media canvas, #video{
+    display:none;
+}
+
+/* Loading protected resources */
+#logins script, #logins img {
+    display: none;
+}
+
+/* Layout */
+
+@media (max-width: 400px) {
+    h1 {
+        width:100%;
+        text-align: center;
+        -moz-box-sizing: border-box;
+    }
+    h2 {
+        width:100%;
+    }
+    body {
+        min-width:400px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    h1 {
+        width:100%;
+        text-align: center;
+        -moz-box-sizing: border-box;
+    }
+    .data{
+        width:44%;
+        float:left;
+        -moz-box-sizing: border-box;
+    }
+    #map{
+        padding:0px;
+        margin-bottom:15px;
+    }
+    .long{
+        float:left;
+        width:100%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1366px){
+    .data{
+        width:45%;
+        float:left;
+    }
+}
+
+@media (min-width: 1367px) {
+    //TODO
+}
+
+
+
+
